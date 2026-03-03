@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: crypto-wallet
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/crypto_wallet_db
+    username: postgres
+    password: secret0905  
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update          # таблицы создадутся автоматически при запуске
+      show-sql: true            # покажет SQL-запросы в консоли — полезно для отладки
+      properties:
+        hibernate:
+          format_sql: true
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false         # отключаем, чтобы избежать проблем с lazy loading
+
+server:
+  port: 8081                  # порт приложения (можно оставить 8080)
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE  # покажет параметры запросов
