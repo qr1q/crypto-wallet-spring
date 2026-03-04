@@ -151,5 +151,4 @@ crypto-wallet/
 
 **Katerina**  
 Junior Java Developer  
-[LinkedIn] www.linkedin.com/in/katerina-tropashko-7b0112295
-[Telegram] https://t.me/tropkaaa
+[LinkedIn] www.linkedin.com/in/katerina-tropashko-7b0112295 | [Telegram] https://t.me/tropkaaa
